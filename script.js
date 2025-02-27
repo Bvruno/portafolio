@@ -1,3 +1,5 @@
+
+/*
 document.addEventListener('DOMContentLoaded', function() {
     const githubUsername = 'Bvruno'; // Cambia esto por tu nombre de usuario de GitHub
     const linkedinProfile = 'bruno-varillas-poblete'; // Cambia esto por tu perfil de LinkedIn
@@ -20,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         })
         .catch(error => console.error('Error al cargar los repositorios:', error));
-});
-
+});*/
+/*
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar el archivo JSON
     fetch('experience.json')
@@ -79,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error al cargar el JSON:', error));
 });
-
+*/
 document.addEventListener('DOMContentLoaded', function() {
     // Cargar el archivo JSON
     fetch('experience.json')
@@ -101,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const certificatesContainer = document.getElementById('certificates-list');
                 data.certificates.forEach(cert => {
                     const certificateCard = document.createElement('div');
-                    certificateCard.className = 'certificate-card';
+                    certificateCard.className = 'certificate-list';
                     certificateCard.innerHTML = `
                         <h3>${cert.name}</h3>
                         <p>Emitido por: ${cert.issuer}</p>
@@ -117,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const educationContainer = document.getElementById('education-list');
                 data.education.forEach(edu => {
                     const educationCard = document.createElement('div');
-                    educationCard.className = 'education-card';
+                    educationCard.className = 'education-list';
                     educationCard.innerHTML = `
                         <h3>${edu.institution}</h3>
                         <p>${edu.area} - ${edu.studyType}</p>
