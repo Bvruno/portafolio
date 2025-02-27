@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Mostrar experiencia laboral
             const experienceContainer = document.getElementById('linkedin-experience');
             data.work.forEach(exp => {
+                console.log(exp);
                 const experienceCard = document.createElement('div');
                 experienceCard.className = 'experience-card';
                 experienceCard.innerHTML = `
