@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const githubUsername = 'tu-usuario-github'; // Cambia esto por tu nombre de usuario de GitHub
-    const linkedinProfile = 'tu-perfil-linkedin'; // Cambia esto por tu perfil de LinkedIn
+    const githubUsername = 'Bvruno'; // Cambia esto por tu nombre de usuario de GitHub
+    const linkedinProfile = 'bruno-varillas-poblete'; // Cambia esto por tu perfil de LinkedIn
 
     // Cargar repositorios de GitHub
     fetch(`https://api.github.com/users/${githubUsername}/repos`)
