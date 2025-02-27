@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #27293d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #a8a8a8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00d1b2;
+}
+
+#about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+#experience, #projects {
+    background-color: #2a2b3d;
+}
+
+#github-repos, #linkedin-experience {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.repo-card, .experience-card {
+    background-color: #27293d;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 40px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.repo-card h3, .experience-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #00d1b2;
+}
+
+.repo-card p, .experience-card p {
+    margin: 10px 0 0;
+    color: #a8a8a8;
+}
+
+footer {
+    background-color: #27293d;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
