@@ -96,6 +96,37 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
+            // Mostrar certificados
+            if (document.getElementById('certificates-list')) {
+                const certificatesContainer = document.getElementById('certificates-list');
+                data.certificates.forEach(cert => {
+                    const certificateCard = document.createElement('div');
+                    certificateCard.className = 'certificate-card';
+                    certificateCard.innerHTML = `
+                        <h3>${cert.name}</h3>
+                        <p>Emitido por: ${cert.issuer}</p>
+                        <p>Fecha: ${cert.startDate}</p>
+                        ${cert.url ? `<a href="${cert.url}" target="_blank">Ver certificado</a>` : ''}
+                    `;
+                    certificatesContainer.appendChild(certificateCard);
+                });
+            }
+
+            // Mostrar educación
+            if (document.getElementById('education-list')) {
+                const educationContainer = document.getElementById('education-list');
+                data.education.forEach(edu => {
+                    const educationCard = document.createElement('div');
+                    educationCard.className = 'education-card';
+                    educationCard.innerHTML = `
+                        <h3>${edu.institution}</h3>
+                        <p>${edu.area} - ${edu.studyType}</p>
+                        <p>${edu.startDate} a ${edu.endDate}</p>
+                    `;
+                    educationContainer.appendChild(educationCard);
+                });
+            }
+
             // Mostrar experiencia laboral en la página de experiencia
             if (document.getElementById('linkedin-experience')) {
                 const experienceContainer = document.getElementById('linkedin-experience');
