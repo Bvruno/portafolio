@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             const reposContainer = document.getElementById('github-repos');
             data.forEach(repo => {
+                console.log(repo);
                 const repoCard = document.createElement('div');
                 repoCard.className = 'repo-card';
                 repoCard.innerHTML = `
@@ -26,12 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             const experienceContainer = document.getElementById('linkedin-experience');
             data.forEach(exp => {
+                console.log(exp);
                 const experienceCard = document.createElement('div');
                 experienceCard.className = 'experience-card';
                 experienceCard.innerHTML = `
-                    <h3>${exp.title}</h3>
-                    <p>${exp.company} - ${exp.dates}</p>
-                    <p>${exp.description}</p>
+                    <h3>${exp.position}</h3>
+                    <p>${exp.name} - ${exp.startDate} al ${exp.endDate}</p>
+                    <p>${exp.summary}</p>
                 `;
                 experienceContainer.appendChild(experienceCard);
             });
