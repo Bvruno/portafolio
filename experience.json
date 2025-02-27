@@ -1,0 +1,434 @@
+{
+    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+    "basics": {
+      "name": "Bruno Alberto Varillas Poblete",
+      "label": "Analista de Software | Java | Kotlin | Spring Boot | Quarkus | MongoDB | SQL | NoSQL | PostgressDB | Amazon S3 | Kubernetes | Azure | Azure Management | Azure B2C | Azure Custom Policy | IBMCloud | Webflux | R2DBC",
+      "image": "",
+      "email": "brunovarillas@hotmail.com",
+      "phone": "941438539",
+      "url": "",
+      "summary": "Backend developer con experiencia en el desarrollo de servicios API REST en Java, utilizando los frameworks Spring y Quarkus. He liderado la migración de un servicio monolítico a múltiples microservicios, integrando bases de datos como MongoDB, SQL Server y Postgres. Apasionado por el desarrollo de software de calidad, he aplicado principios SOLID y metodologías ágiles como SCRUM en todos mis proyectos. Busco seguir creciendo profesionalmente en un ambiente desafiante y colaborativo.",
+      "location": {
+        "countryCode": "ES",
+        "address": "Peru"
+      },
+      "profiles": [
+        {
+          "network": "LinkedIn",
+          "username": "bruno-varillas-poblete",
+          "url": "https://www.linkedin.com/in/bruno-varillas-poblete/"
+        }
+      ]
+    },
+    "work": [
+      {
+        "name": "keOla Networks",
+        "position": "Analista de software",
+        "startDate": "2024-03-31",
+        "endDate": "2024-10-31",
+        "highlights": [],
+        "summary": "1. Creación de monolito modular Java.\n  * Desarrollo completo del Back-end para la página de reserva de departamentos y habitaciones.\n  * Planificación y normalización de la base de datos en PostgreSQL.\n  * Despliegue continuo con Jenkins.\n\n2. Mejoras a Microservicios.\n  * Optimice los tiempos de respuestas de los ep, pasando en promedio de 45s - 90s a 30ms a 600ms.\n  * Migre Store Procedure de SqlServer a Java, reduciendo los tiempo de ejecución de 27h - 32h a solo 47segundos.",
+        "url": "https://www.linkedin.com/company/keola-networks/",
+        "location": "Lima, Perú"
+      },
+      {
+        "name": "NTT DATA Europe & Latam",
+        "position": "Senior Technical Specialist",
+        "startDate": "2023-12-31",
+        "endDate": "2024-02-28",
+        "highlights": [],
+        "summary": "•\tDesarrollo de APIs usando Spring WebFlux \n•\tDocumentación completa de los proyectos (JavaDocs, Swagger)\n•\tPlanificación y desarrollo Ágil - Scrum",
+        "url": "https://www.linkedin.com/company/ntt-data-europe-latam/",
+        "location": "Lima, Lima, Perú"
+      },
+      {
+        "name": "Bizlinks",
+        "position": "Analista programador - FrontEnd y BackEnd",
+        "startDate": "2021-07-31",
+        "endDate": "2023-12-31",
+        "highlights": [],
+        "summary": "1.\tMigración de monolito a Microservicios del Sistema de cuentas por cobrar (SCC)\nBACK-END\n•\tCreación de múltiples APIs usando Spring Boot, Spring Batch y Java 8.\n•\tAnálisis completo del sistema a migrar usando el desarrollo Ágil – Scrum.\n•\tDocumentación completa de los proyectos (JavaDocs, Swagger).\n•\tMigración de bases de datos en SQL Server y Postgres a MongoDB.\n•\tIntegración de seguridad con OAuth2 y JWT usando Spring Security. \n•\tImplementación del despliegue continúo usando CI/CD y mantenimiento de servicios en clúster IBM Kubernetes, Azure, Devops, Gitlab, Github.\n\nFRONT-END\n•\tMigración de Angular 6 a Angular 12.\n•\tDesarrollo del portal en Angular 12 usando RxJS, HttpClient, Injectable, comunicación mediante Routes.\n•\tUso de Angular Material.\n•\tIntegración de los servicios creados en Spring Boot.\n\n2.\tMejoras en el portal PAGOS YA (PY)\nBACK-END\n•\tDesarrollo de nuevas funcionalidades en Spring Boot con Java 8.\n•\tDesarrollo usando programación funcional en Quarkus.\n•\tUso de programación reactiva usando Spring WebFlux.\n•\tDesarrollo de una API con el fin de integrar diversos portales externos con el portal PAGOS YA. \n•\tMigración de proyecto de Spring Boot a Quarkus Native.\nFRONT-END\n•\tActualización en Angular 12 mejorando la eficiencia en el desarrollo.\n•\tMejoras en las vistas e integración de los nuevos desarrollos.\n•\tCorrecciones de errores.\n\n3.\tCorrección de errores según los requerimientos de la SUNAT\nBACK-END\n•\tImplementación de las respectivas correcciones según los requerimientos de la SUNAT en las APIs involucradas en la comunicación con dicha institución.\n•\tCorrecciones realizadas en Quarkus.",
+        "url": "https://www.linkedin.com/company/bizlinks-latin-america/",
+        "location": "Lima, Perú"
+      }
+    ],
+    "volunteer": [],
+    "education": [
+      {
+        "institution": "ISIL",
+        "area": "Ingeniería de software",
+        "studyType": "Bachelor of Technology - BTech",
+        "startDate": "2017-12-31",
+        "endDate": "2020-12-31",
+        "score": "17",
+        "courses": []
+      },
+      {
+        "institution": "Universidad Privada del Norte",
+        "area": "Ingeniería industrial",
+        "studyType": "",
+        "startDate": "2014-12-31",
+        "endDate": "2017-12-31",
+        "score": "16",
+        "courses": []
+      },
+      {
+        "institution": "Platzi",
+        "area": "Desarrollo de aplicaciones web",
+        "studyType": "Engineer's degree",
+        "startDate": "2020-12-31",
+        "endDate": "",
+        "score": "",
+        "courses": []
+      }
+    ],
+    "awards": [],
+    "certificates": [
+      {
+        "name": "AWS Cloud Practitioner Essentials Day",
+        "issuer": "Amazon Web Services (AWS)",
+        "startDate": "2023-09-30"
+      },
+      {
+        "name": "Migrating to AWS",
+        "issuer": "Amazon Web Services (AWS)",
+        "startDate": "2023-09-30"
+      },
+      {
+        "name": "Curso de Java Spring",
+        "issuer": "Platzi",
+        "startDate": "2022-10-31",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/curso/1996-course/diploma/detalle/"
+      },
+      {
+        "name": "Curso Básico de MongoDB",
+        "issuer": "Platzi",
+        "startDate": "2021-09-30",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/course/1533-mongodb/diploma/detalle/"
+      },
+      {
+        "name": "Curso de Angular 8",
+        "issuer": "Platzi",
+        "startDate": "2021-09-30",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/course/1670-angular-2019/diploma/detalle/"
+      },
+      {
+        "name": "Curso de Kotlin para Android",
+        "issuer": "Platzi",
+        "startDate": "2021-02-28",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/course/1836-kotlin-android/diploma/detalle/"
+      },
+      {
+        "name": "Curso de Flujo de Desarrollo Moderno CodeStream",
+        "issuer": "Platzi",
+        "startDate": "2020-12-31",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/curso/2157-desarrollo-moderno-codestream/diploma/detalle/"
+      },
+      {
+        "name": "Curso Definitivo de HTML y CSS",
+        "issuer": "Platzi",
+        "startDate": "2020-11-30",
+        "url": "https://platzi.com/@bruno-varillas-poblete/curso/2008-html-css-2020/diploma/detalle/"
+      },
+      {
+        "name": "Curso Profesional de Git y GitHub",
+        "issuer": "Platzi",
+        "startDate": "2020-11-30",
+        "url": "https://platzi.com/@bruno-varillas-poblete/curso/1557-git-github/diploma/detalle/"
+      },
+      {
+        "name": "Curso de Programación Orientada a Objetos: POO",
+        "issuer": "Platzi",
+        "startDate": "2020-11-30",
+        "url": "https://platzi.com/@bruno-varillas-poblete/curso/1474-oop/diploma/detalle/"
+      },
+      {
+        "name": "Curso de Java: Backend con Spring Boot",
+        "issuer": "Platzi",
+        "startDate": "2020-10-31",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/curso/2317-spring-boot/diploma/detalle/"
+      },
+      {
+        "name": "Curso Avanzado de Java SE",
+        "issuer": "Platzi",
+        "startDate": "2019-07-31",
+        "url": "https://platzi.com/p/bruno-varillas-poblete/curso/1236-java-avanzado/diploma/detalle/"
+      }
+    ],
+    "publications": [],
+    "skills": [
+      {
+        "name": "Spring WebFlux",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Apache Kafka",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "eureka",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Gateway",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Responsabilidad",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Facilidad de adaptación",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Quarkus Native",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Quarkus",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "azure api management",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "azure ad b2c",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Spring Framework",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Kubernetes",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Spring MVC",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Docker",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Microservicios",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Desarrollo de API",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Services API",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "IBM Cloud",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Angular CLI",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Spring Boot",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Desarrollo de software",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "GitHub",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Liderazgo",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Capacidad de análisis",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Angular Material",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Desarrollo de Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Resolución de problemas",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Hojas de estilos en cascada (CSS)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Software",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PhoneGap",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Karma",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Programación",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Comunicación",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "PHP",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "HTML",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Java",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "SQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MongoDB",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "JavaScript",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Jasmine Framework",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Apache Cordova",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Git",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MySQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "NoSQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "GitLab",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Android",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Aplicaciones web",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Programación orientada a objetos (POO)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Firebase",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Apache",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Angular",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "es",
+        "fluency": "Native Speaker"
+      }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [],
+    "meta": {
+      "version": "v1.0.0",
+      "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+    }
+  }

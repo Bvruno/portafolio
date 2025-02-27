@@ -20,13 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error al cargar los repositorios:', error));
 
-    // Cargar experiencia de LinkedIn (esto es un ejemplo, necesitarías una API o scraping)
-    const experienceContainer = document.getElementById('linkedin-experience');
-    experienceContainer.innerHTML = `
-        <div class="experience-card">
-            <h3>Nombre del Puesto</h3>
-            <p>Empresa - Fecha de inicio - Fecha de fin</p>
-            <p>Descripción del puesto.</p>
-        </div>
-    `;
+    // Cargar experiencia laboral desde experience.json
+    fetch('experience.json')
+        .then(response => response.json())
+        .then(data => {
+            const experienceContainer = document.getElementById('linkedin-experience');
+            data.forEach(exp => {
+                const experienceCard = document.createElement('div');
+                experienceCard.className = 'experience-card';
+                experienceCard.innerHTML = `
+                    <h3>${exp.title}</h3>
+                    <p>${exp.company} - ${exp.dates}</p>
+                    <p>${exp.description}</p>
+                `;
+                experienceContainer.appendChild(experienceCard);
+            });
+        })
+        .catch(error => console.error('Error al cargar la experiencia:', error));
 });
