@@ -79,3 +79,58 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error al cargar el JSON:', error));
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Cargar el archivo JSON
+    fetch('experience.json')
+        .then(response => response.json())
+        .then(data => {
+            // Mostrar habilidades en la página de inicio
+            if (document.getElementById('skills-list')) {
+                const skillsContainer = document.getElementById('skills-list');
+                data.skills.forEach(skill => {
+                    const skillItem = document.createElement('span');
+                    skillItem.className = 'skill-item';
+                    skillItem.textContent = skill.name;
+                    skillsContainer.appendChild(skillItem);
+                });
+            }
+
+            // Mostrar experiencia laboral en la página de experiencia
+            if (document.getElementById('linkedin-experience')) {
+                const experienceContainer = document.getElementById('linkedin-experience');
+                data.work.forEach(exp => {
+                    const experienceCard = document.createElement('div');
+                    experienceCard.className = 'experience-card';
+                    experienceCard.innerHTML = `
+                        <h3>${exp.position} en ${exp.name}</h3>
+                        <p>${exp.location} - ${exp.startDate} a ${exp.endDate}</p>
+                        <p>${exp.summary.replace(/\n/g, '<br>')}</p>
+                    `;
+                    experienceContainer.appendChild(experienceCard);
+                });
+            }
+
+            // Mostrar proyectos de GitHub en la página de proyectos
+            if (document.getElementById('github-repos')) {
+                const githubUsername = 'Bvruno'; // Cambia esto por tu nombre de usuario de GitHub
+                fetch(`https://api.github.com/users/${githubUsername}/repos`)
+                    .then(response => response.json())
+                    .then(repos => {
+                        const reposContainer = document.getElementById('github-repos');
+                        repos.forEach(repo => {
+                            const repoCard = document.createElement('div');
+                            repoCard.className = 'repo-card';
+                            repoCard.innerHTML = `
+                                <h3>${repo.name}</h3>
+                                <p>${repo.description || 'Sin descripción'}</p>
+                                <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
+                            `;
+                            reposContainer.appendChild(repoCard);
+                        });
+                    })
+                    .catch(error => console.error('Error al cargar los repositorios:', error));
+            }
+        })
+        .catch(error => console.error('Error al cargar el JSON:', error));
+});

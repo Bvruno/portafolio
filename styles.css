@@ -1,30 +1,53 @@
+/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1e1e2f;
     color: #ffffff;
+    line-height: 1.6;
 }
 
 header {
     background-color: #27293d;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    color: #00d1b2;
 }
 
 header p {
-    margin: 0;
+    margin: 10px 0 0;
     font-size: 1.2em;
     color: #a8a8a8;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: #00d1b2;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -38,29 +61,33 @@ h2 {
     color: #00d1b2;
 }
 
-#about p {
-    font-size: 1.1em;
-    line-height: 1.6;
+/* Estilos para tarjetas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-
-
-/* Estilos para tarjetas de experiencia, educación y certificados */
-.experience-card, .education-card, .certificate-card {
+.experience-card, .repo-card, .education-card, .certificate-card {
     background-color: #27293d;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-card h3, .education-card h3, .certificate-card h3 {
+.experience-card:hover, .repo-card:hover, .education-card:hover, .certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.experience-card h3, .repo-card h3, .education-card h3, .certificate-card h3 {
     margin: 0;
     font-size: 1.5em;
     color: #00d1b2;
 }
 
-.experience-card p, .education-card p, .certificate-card p {
+.experience-card p, .repo-card p, .education-card p, .certificate-card p {
     margin: 10px 0 0;
     color: #a8a8a8;
 }
@@ -80,46 +107,15 @@ h2 {
     font-size: 0.9em;
 }
 
-#projects {
-    background-color: #2a2b3d;
-}
-
-#github-repos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.repo-card {
-    background-color: #27293d;
-    padding: 20px;
-    border-radius: 8px;
-    flex: 1 1 calc(33.333% - 40px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.repo-card h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #00d1b2;
-}
-
-.repo-card p {
-    margin: 10px 0 0;
-    color: #a8a8a8;
-}
-
 footer {
     background-color: #27293d;
     padding: 20px 0;
     text-align: center;
+    margin-top: 40px;
 }
 
-footer a {
-    color: #00d1b2;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #a8a8a8;
 }
