@@ -43,17 +43,54 @@ h2 {
     line-height: 1.6;
 }
 
-#experience, #projects {
+
+
+/* Estilos para tarjetas de experiencia, educación y certificados */
+.experience-card, .education-card, .certificate-card {
+    background-color: #27293d;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card h3, .education-card h3, .certificate-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #00d1b2;
+}
+
+.experience-card p, .education-card p, .certificate-card p {
+    margin: 10px 0 0;
+    color: #a8a8a8;
+}
+
+/* Estilos para habilidades */
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #00d1b2;
+    color: #1e1e2f;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+#projects {
     background-color: #2a2b3d;
 }
 
-#github-repos, #linkedin-experience {
+#github-repos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.repo-card, .experience-card {
+.repo-card {
     background-color: #27293d;
     padding: 20px;
     border-radius: 8px;
@@ -61,13 +98,13 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.repo-card h3, .experience-card h3 {
+.repo-card h3 {
     margin: 0;
     font-size: 1.5em;
     color: #00d1b2;
 }
 
-.repo-card p, .experience-card p {
+.repo-card p {
     margin: 10px 0 0;
     color: #a8a8a8;
 }

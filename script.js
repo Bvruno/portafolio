@@ -20,23 +20,61 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         })
         .catch(error => console.error('Error al cargar los repositorios:', error));
+});
 
-    // Cargar experiencia laboral desde experience.json
+document.addEventListener('DOMContentLoaded', function() {
+    // Cargar el archivo JSON
     fetch('experience.json')
         .then(response => response.json())
         .then(data => {
+            // Mostrar experiencia laboral
             const experienceContainer = document.getElementById('linkedin-experience');
-            data.forEach(exp => {
-                console.log(exp);
+            data.work.forEach(exp => {
                 const experienceCard = document.createElement('div');
                 experienceCard.className = 'experience-card';
                 experienceCard.innerHTML = `
-                    <h3>${exp.position}</h3>
-                    <p>${exp.name} - ${exp.startDate} al ${exp.endDate}</p>
-                    <p>${exp.summary}</p>
+                    <h3>${exp.position} en ${exp.name}</h3>
+                    <p>${exp.location} - ${exp.startDate} a ${exp.endDate}</p>
+                    <p>${exp.summary.replace(/\n/g, '<br>')}</p>
                 `;
                 experienceContainer.appendChild(experienceCard);
             });
+
+            // Mostrar educación
+            const educationContainer = document.getElementById('education-list');
+            data.education.forEach(edu => {
+                const educationCard = document.createElement('div');
+                educationCard.className = 'education-card';
+                educationCard.innerHTML = `
+                    <h3>${edu.institution}</h3>
+                    <p>${edu.area} - ${edu.studyType}</p>
+                    <p>${edu.startDate} a ${edu.endDate}</p>
+                `;
+                educationContainer.appendChild(educationCard);
+            });
+
+            // Mostrar certificados
+            const certificatesContainer = document.getElementById('certificates-list');
+            data.certificates.forEach(cert => {
+                const certificateCard = document.createElement('div');
+                certificateCard.className = 'certificate-card';
+                certificateCard.innerHTML = `
+                    <h3>${cert.name}</h3>
+                    <p>Emitido por: ${cert.issuer}</p>
+                    <p>Fecha: ${cert.startDate}</p>
+                    ${cert.url ? `<a href="${cert.url}" target="_blank">Ver certificado</a>` : ''}
+                `;
+                certificatesContainer.appendChild(certificateCard);
+            });
+
+            // Mostrar habilidades
+            const skillsContainer = document.getElementById('skills-list');
+            data.skills.forEach(skill => {
+                const skillItem = document.createElement('span');
+                skillItem.className = 'skill-item';
+                skillItem.textContent = skill.name;
+                skillsContainer.appendChild(skillItem);
+            });
         })
-        .catch(error => console.error('Error al cargar la experiencia:', error));
+        .catch(error => console.error('Error al cargar el JSON:', error));
 });
