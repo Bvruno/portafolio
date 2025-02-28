@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error al cargar el JSON:', error));
 });
 */
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Cargar el archivo JSON
     fetch('experience.json')
         .then(response => response.json())
@@ -91,9 +91,11 @@ document.addEventListener('DOMContentLoaded', function() {
             if (document.getElementById('skills-list')) {
                 const skillsContainer = document.getElementById('skills-list');
                 data.skills.forEach(skill => {
-                    const skillItem = document.createElement('span');
-                    skillItem.className = 'skill-item';
-                    skillItem.textContent = skill.name;
+                    const skillItem = document.createElement('div');
+                    skillItem.className = 'col';
+                    //skillItem.innerHTML = `<div class="card"><div class="card-body">${skill.name}</div></div>`;
+                    skillItem.innerHTML = `<button type="button" class="btn btn-primary btn-sm mt-1"> ${skill.name} </button>`;
+                    //skillItem.textContent = skill.name;
                     skillsContainer.appendChild(skillItem);
                 });
             }
@@ -102,14 +104,15 @@ document.addEventListener('DOMContentLoaded', function() {
             if (document.getElementById('certificates-list')) {
                 const certificatesContainer = document.getElementById('certificates-list');
                 data.certificates.forEach(cert => {
-                    const certificateCard = document.createElement('div');
+                    const certificateCard = document.createElement('tr');
                     certificateCard.className = 'certificate-list';
                     certificateCard.innerHTML = `
-                        <h3>${cert.name}</h3>
-                        <p>Emitido por: ${cert.issuer}</p>
-                        <p>Fecha: ${cert.startDate}</p>
-                        ${cert.url ? `<a href="${cert.url}" target="_blank">Ver certificado</a>` : ''}
+                                <th scope="row">${cert.name}</th>
+                                <td>${cert.issuer}</td>
+                                <td>${cert.startDate}</td>
+                                <td>${cert.url ? `<a href="${cert.url}" target="_blank">Ver certificado</a>` : ''}</td>
                     `;
+                    //certificateCard.innerHTML = `<h3>${cert.name}</h3><p>Emitido por: ${cert.issuer}</p><p>Fecha: ${cert.startDate}</p>${cert.url ? `<a href="${cert.url}" target="_blank">Ver certificado</a>` : ''}`;
                     certificatesContainer.appendChild(certificateCard);
                 });
             }
@@ -155,10 +158,16 @@ document.addEventListener('DOMContentLoaded', function() {
                             const repoCard = document.createElement('div');
                             repoCard.className = 'repo-card';
                             repoCard.innerHTML = `
-                                <h3>${repo.name}</h3>
-                                <p>${repo.description || 'Sin descripción'}</p>
-                                <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">${repo.name}</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                                        <p class="card-text">${repo.description || 'Sin descripción'}</p>
+                                        <a href="${repo.html_url}" target="_blank">Ver en GitHub</a>
+                                    </div>
+                                </div>
                             `;
+                            //repoCard.innerHTML = `<h3>${repo.name}</h3><p>${repo.description || 'Sin descripción'}</p><a href="${repo.html_url}" target="_blank">Ver en GitHub</a>`;
                             reposContainer.appendChild(repoCard);
                         });
                     })
